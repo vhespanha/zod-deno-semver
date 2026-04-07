@@ -7,6 +7,7 @@ Utility library adding support for semantic validation of SemVer strings.
 Declare your SemVer schema:
 
 ```typescript
+const z = ExtendZodWithSemVer(zod);
 const schema = z.semver().greaterThan('0.1.2');
 ```
 
